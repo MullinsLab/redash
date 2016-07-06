@@ -68,7 +68,7 @@
                     <div class="alert alert-danger m-5" ng-show="queryResult.getError()">Error running query: <strong>{{queryResult.getError()}}</strong></div>
                   </div>
                   <div ng-switch-when="done">
-                      <visualization-renderer visualization="widget.visualization" query-result="queryResult" class="t-body"></visualization-renderer>
+                      <visualization-renderer visualization="widget.visualization" query-result="queryResult" hide-filters="dashboard.dashboard_filters_enabled" class="t-body"></visualization-renderer>
                   </div>
                   <div ng-switch-default class="text-center">
                     <i class="zmdi zmdi-refresh zmdi-hc-spin zmdi-hc-5x"></i>
